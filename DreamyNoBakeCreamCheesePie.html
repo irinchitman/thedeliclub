@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dreamy No-Bake Cream Cheese Pie</title>
+    
+    <link rel="icon" href="DeliClub.png" type="image/gif" sizes="16x16">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Ratio_Favicon.png" type="image/gif" sizes="16x16">
+    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">   
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>    
+        
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        
+        h1 {
+            font-weight: 400;
+            font-size: 42px;
+            letter-spacing: 0.015em;
+            line-height: inherit;
+            color: #F7714D;
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 50px;
+            margin: 0px;
+        }
+        
+        p {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: #3D1E14;
+            letter-spacing: inherit;
+            line-height: 1.6em;
+        }   
+        
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #F7714D;
+            padding-top: 0px;
+        }
+        
+        ol.footnotes {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #7A3B27;
+            letter-spacing: inherit;
+            line-height: 1.6em;
+            list-style-type: ;
+            padding: 0px;
+            margin: 15px;
+            
+        }
+        
+        ol.ingredients {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            color: #F7714D;
+            letter-spacing: .02em;
+            line-height: 18px;
+            list-style-type:;
+            padding-top: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 9px;
+            margin: 0px;
+        }
+        
+        ol {
+            padding: 0px;
+            margin: 00px;
+        }
+        
+        #superscript {
+            font-size: 21px;
+        }
+        
+        div.title {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 0px;
+            width: 300px;
+            float:left;
+            z-index: 0;
+        }
+        
+        div.stories {
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 150px;
+            padding: 0px;
+            float: left;
+            max-width: 550px;
+            z-index: 0;
+        }
+        
+        
+        div.credit {
+            font-size: 17px;
+            position: absolute;
+            color: #F7714D;
+            left: 50px;
+            margin-top:20px;
+            
+        }
+        
+         div.date {
+            font-size: 17px;
+            line-height: 1.3em;
+            position: absolute;
+            color: #F7714D;
+            right: 50px;
+            margin-top:20px;
+        }
+        
+         div.scrollup {
+            font-size: 22px;
+            line-height: 1.3em; 
+            position: absolute;
+            color: #F7714D;
+            right: 250px;
+            margin-top:35px;
+        }
+        
+        div.scrollup:hover {
+            font-style: italic;
+        }
+        
+        .navbar {
+            font-family: 'Noto Sans', sans-serif;
+            position: fixed;
+            margin: 0px;
+            padding: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 110px;
+            z-index: 1;
+            left: 0px;
+        }
+             
+        
+        div.sidenav {
+        }
+        
+        .arrows {
+            font-family: 'Noto Sans', sans-serif;
+            color: #F7714D;
+            position: fixed;
+            bottom: 350px;
+            left: 17px;
+            display:none;
+        }
+        
+        .scrollupside {
+            font-size: 22px;
+        }
+        
+        .scrollupside:hover {
+            font-style: italic;
+        }
+        
+        .rotate {
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 17px;
+            line-height: 1.3em;
+            color: #F7714D;
+            position: fixed;
+            left: -120px;
+            bottom: 185px;
+            height: 30px;
+            width: 300px;
+            display:none;
+        }
+        
+        a {
+            color: #F7714D;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            font-style: italic;
+        }
+        
+        #superinbody {
+            font-size: 10px;
+            color: #F7714D;
+            line-height: 10px;
+        }
+        
+        
+        div.logo {
+            width:200px;
+            top: 25px;
+            right: 25px;
+            position:absolute;
+            display:block;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .credit {display: none;}
+            .scrollup {display: none;}
+            .rotate {display:block;}
+            .arrows {display:block;}
+}
+        
+    </style>
+</head>
+    
+<body>
+    <div class=title>
+        <h1>Dreamy <br> No-Bake Cream Cheese Pie <sup id="superscript">2020</sup></h1>
+       
+        <svg height="2" width="inherit">
+            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line></svg>
+        
+        <h2>Make 9-inch Pie or <br> 12 Mini Keebler Ready-Crust </h2>
+        
+        <svg height="2" width="inherit">
+            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line></svg>
+
+        <h2><b>Ingredients</b></h2> 
+        
+        <ol class=ingredients>
+            <b>Crust</b>
+            <ol>196 g Khong Guan Sultana Biscuits <br> (or graham crackers)</ol>
+            <ol>113 g Unsalted butter</ol>
+            <ol>12 g of sugar</ol>
+            <ol>1/2 teaspoon of kosher salts</ol>
+        </ol>
+        <ol class=ingredients>
+            <b>Cream Cheese Filling</b>
+            <ol>1 pack (8 oz) of Philadelphia cream cheese</ol>
+            <ol>1 can (14 oz) of sweetened condensed milk</ol>
+            <ol>80 ml of lime juice</ol>
+            <ol>1 teaspoon pure vanilla extract</ol>
+        </ol>
+        <ol class=ingredients>
+            <b>Topping</b>
+            <ol>1 jar (695 g) Dole Sliced Peaches <br> in Light Syrup</ol>
+        </ol>
+        
+         <svg height="2" width="inherit">
+            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line></svg>
+
+    </div>
+    
+    <div class=stories>
+        
+        <p><b>Whenever my Chairball team coach made the-sixth-grader-me run 10 laps around the basketball court, I’m telling you I never actually ran the full 10 laps. I cut corners.</b></p> 
+        
+        <p>Being the short-cut Queen that I am, I recommend buying a ready-made graham cracker crust. When I do make my own crust, I substitute the-hard-to-find-in-Asia graham cracker with Khong Guan Sultana Biscuits.<sup id="superinbody">1</sup></p>
+        
+        <img src="PeachCreamCheesePie_01.jpg" alt="peachcreampie1" style="width:100%;">
+        
+        <p><b>Crust</b></p>
+        
+        <p>Preheat oven to 325 F. Put the biscuits into a large ziplock, remove excess air. Using a rolling pin, roll and crush the biscuits (in the ziplock) until coarsely ground. Transfer the biscuits into a large bowl. Add butter, sugar and salt. Mix well until it feels like wet sand.</p>
+        
+        <p>Firmly press the mixture evenly with fingers into a 9” pie dish. Bake crust till golden, around 15-18 minutes, rotate once half way through. Let it cool</p>
+    
+        <p><b>Filling</b></p>
+        
+        <p>Soften cream cheese in room temperature. Using an electric hand-held mixer, beat on high speed until fluffy.</p>
+        
+        <p>Add sweetened condensed milk. Beat using medium speed at first then to slow. Scrape down the side  using the spatula. Continue to beat, targeting the cream cheese lump if there’s any. Using low speed, mix in lime juice and vanilla. Using a spatula fold the mixture once or twice to get rid of any air bubble.</p>
+        
+        <p>Transfer filling into cooled crust. Jiggle, or gently twirl the pie from side to side so the filling fill up evenly at the edge with a flat top.</p>
+        
+        
+        <p><b>Topping Arrangement Tip for Mini Crust</b></p>
+        
+        <p>Use 1/2 Peach per 1 Mini Crust</p>
+        
+        <p>Slice the peaches into thin wedges. About 4 millimetre thick at the thicker edge. Align the curve of the first wedge with the edge of the crust. Span other peaches along the edge like a fan, with the left side of the first wedge as the centre. Safe the smaller wedges for the last pieces.</p>
+        
+        <img src="PeachCreamCheesePie_02.jpg" alt="peachcreampie2" style="width:100%;">
+        
+    </div>
+    
+    <div class=logo>
+        <img src="DeliClub.svg" alt="Deli Club Logo">
+    </div>
+        
+    
+    <div class=navbar class=full>
+         <div class=credit>
+            <a href="index.html">←</a> Written<br> by Irin Chitman
+        </div>
+        <div class=scrollup onclick="scrollToTop()">
+        ↑ 
+        </div>
+        <div class=date>
+           <br>The Deli Club © 2020
+        </div>
+    </div>       
+
+        <div class=rotate>
+        Sour Cherry by Irin Chitman
+        </div>
+        <div class=arrows>
+        <a href="index.html">←</a>
+        <div class=scrollupside onclick="scrollToTop()">
+         ↑ 
+        </div>
+        </div>     
+    
+    <script> 
+        function scrollToTop() { 
+            window.scrollTo(0, 0); 
+        } 
+        
+     </script> 
+    
+    
+</body>
+    
