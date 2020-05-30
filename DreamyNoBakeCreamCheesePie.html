@@ -170,7 +170,7 @@
         
         .navbar {
             font-family: 'Noto Sans', sans-serif;
-            position: fixed;
+            position: relative;
             margin: 0px;
             padding: 0px;
             bottom: 0px;
@@ -180,18 +180,7 @@
             left: 0px;
         }
              
-        
-        div.sidenav {
-        }
-        
-        .arrows {
-            font-family: 'Noto Sans', sans-serif;
-            color: #F7714D;
-            position: fixed;
-            bottom: 350px;
-            left: 17px;
-            display:none;
-        }
+ 
         
         .scrollupside {
             font-size: 22px;
@@ -201,20 +190,6 @@
             font-style: italic;
         }
         
-        .rotate {
-            -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-            font-family: 'Noto Sans', sans-serif;
-            font-size: 17px;
-            line-height: 1.3em;
-            color: #F7714D;
-            position: fixed;
-            left: -120px;
-            bottom: 185px;
-            height: 30px;
-            width: 300px;
-            display:none;
-        }
         
         a {
             color: #F7714D;
@@ -327,6 +302,18 @@
         </li>
         </ol>
         
+        <div class=navbar class=full>
+         <div class=credit>
+            <a href="index.html">More Stories</a>
+          </div>
+        <div class=scrollup onclick="scrollToTop()">
+        ↑ 
+        </div>
+        <div class=date>
+           <br>The Deli Club © 2020
+        </div>
+        </div>    
+        
         <img class=thumbnail src="PeachCreamCheesePie_Thumbnail.jpg style="width:100%;display:none;">
         
     </div>
@@ -335,28 +322,7 @@
         <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
     </div>
         
-    
-    <div class=navbar class=full>
-         <div class=credit>
-            <a href="index.html">←</a> Written<br> by Irin Chitman
-        </div>
-        <div class=scrollup onclick="scrollToTop()">
-        ↑ 
-        </div>
-        <div class=date>
-           <br>The Deli Club © 2020
-        </div>
-    </div>       
-
-        <div class=rotate>
-        The Deli Club © 2020
-        </div>
-        <div class=arrows>
-        <a href="index.html">←</a>
-        <div class=scrollupside onclick="scrollToTop()">
-         ↑ 
-        </div>
-        </div>     
+   
     
     <script> 
         function scrollToTop() { 
