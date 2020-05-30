@@ -143,9 +143,9 @@
             margin-left: 0px;
             margin-top:20px;
             height: 20px;
-            width: 100px;
-            float: left;
-            
+            float: left; 
+            position: absolute;
+            left: 0px;
         }
         
          div.date {
@@ -154,7 +154,8 @@
             float: left;
             color: #F7714D;
             height: 20px;
-            width: 100px;
+            position: absolute;
+            right: 0px;
         }
         
          div.scrollup {
@@ -163,7 +164,8 @@
             float: left;
             color: #F7714D;
             height: 20px;
-            width: 100px;
+            position: absolute;
+            left: 30%;
         }
         
         div.scrollup:hover {
@@ -303,9 +305,12 @@
         </li>
         </ol>
         
+        <svg height="2" width="inherit">
+            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
         <div class=navbar class=full>
          <div class=credit>
-            <a href="index.html">More Stories</a>
+            <a href="index.html">Read More</a>
           </div>
         <div class=scrollup onclick="scrollToTop()">
         ↑ 
@@ -313,7 +318,10 @@
         <div class=date>
            <br>The Deli Club © 2020
         </div>
-        </div>    
+        </div>   
+        <svg height="2" width="inherit">
+            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
         
         <img class=thumbnail src="PeachCreamCheesePie_Thumbnail.jpg style="width:100%;display:none;">
         
