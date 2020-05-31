@@ -57,7 +57,9 @@
         
         div.content {
             max-width: 1920px;
-            margin: 50px;
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
         
         a {
@@ -108,15 +110,80 @@
             width: 100%;
             height: 110px;
         }
+        div.credit {
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
+            color: #F7714D;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
+        }
         
-        div.logo {
+         div.date {
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
+            line-height: 1.3em;
+            color: #7A3B27;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
+        }
+        
+         div.scrollup {
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
+            line-height: 1.3em; 
+            color: #F7714D;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
+            text-decoration: underline;
+        }
+        
+        div.scrollup:hover {
+            font-style: italic;
+        }
+        
+        .navbar {
+            font-family: 'Noto Sans', sans-serif;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            bottom: 0px;
+            height: 90px;
+            z-index: 1;
+            left: 0px;
+        }
+            
+        
+        
+        a {
+            color: #F7714D;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            font-style: italic;
+        }
+        
+        #superinbody {
+            font-size: 10px;
+            color: #F7714D;
+            line-height: 10px;
+        }
+        
+        
+        div.logobig {
             width:200px;
-            bottom: 110px;
-            margin-left: auto;
-            margin-right: auto;
-            position:relative;
+            top: 2%;
+            right: 2%;
+            position: absolute;
             display:block;
         }
+        
         
         .thumbnail {
             display:none;}
@@ -152,21 +219,37 @@
     
  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"5e45ca9f1c845dbc667b836e9","lid":"0ba75b0dba","uniqueMethods":true}) })</script>
     
-    <div class=nav>
+     <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        <div class=navbar class=full>
          <div class=credit>
-           Stories Written by <br>  Irin Chitman
-        </div>
+            <a href="index.html">Read More Stories</a>
+          </div>
         <div class=scrollup onclick="scrollToTop()">
-        ↑ 
+        Back to the Top
         </div>
         <div class=date>
-           <br> The Deli Club © 2020
+           The Deli Club © 2020
         </div>
-        <div class=logo>
-        <img src="DeliClub.svg" alt="Deli Club Logo">
-        </div> 
-       
-    </div>  
+        </div>   
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+    </div>
+    
+    <div class=logobig>
+        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
+    </div>
+        
+     
+    
+    <script> 
+        function scrollToTop() { 
+            window.scrollTo(0, 0); 
+        } 
+        
+     </script>   
     
     
 </body>
