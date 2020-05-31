@@ -7,7 +7,9 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">   
+   
+    <meta name="viewport" content="width=device-width, initial-scale=.85">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166971152-1"></script>
@@ -20,10 +22,10 @@
 </script>
     
     <style>
+
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>    
-        
         
         html {
             margin: 0px;
@@ -40,10 +42,13 @@
         h1 {
             font-weight: 400;
             font-size: 42px;
-            letter-spacing: 0.015em;
+            letter-spacing: 0em;
             line-height: inherit;
             color: #F7714D;
-            padding: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 50px;
             margin: 0px;
         }
         
@@ -55,6 +60,17 @@
             letter-spacing: inherit;
             line-height: 1.6em;
         }   
+        
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #F7714D;
+            padding-top: 0px;
+        }
         
         ol.footnotes {
             font-family: 'Bai Jamjuree', sans-serif;
@@ -69,22 +85,45 @@
             
         }
         
+        ol.ingredients {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            color: #F7714D;
+            letter-spacing: .02em;
+            line-height: 18px;
+            list-style-type:;
+            padding-top: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 9px;
+            margin: 0px;
+        }
+        
+        ol {
+            padding: 0px;
+            margin: 00px;
+        }
+        
         #superscript {
             font-size: 21px;
         }
         
         div.title {
-            margin: 50px;
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 0px;
             width: 300px;
             float:left;
             z-index: 0;
         }
         
         div.stories {
-            margin-top: 50px;
-            margin-right: 50px;
-            margin-left: 50px;
-            margin-bottom: 150px;
+            margin-top: 4%;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
             padding: 0px;
             float: left;
             max-width: 550px;
@@ -93,30 +132,36 @@
         
         
         div.credit {
-            font-size: 17px;
-            position: absolute;
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
             color: #F7714D;
-            left: 50px;
-            margin-top:20px;
-            
+            text-align: center;
+            position: relative;
+            margin-top:10px;
         }
         
          div.date {
-            font-size: 17px;
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
             line-height: 1.3em;
-            position: absolute;
-            color: #F7714D;
-            right: 50px;
-            margin-top:20px;
+            color: #7A3B27;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
         }
         
          div.scrollup {
-            font-size: 22px;
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
             line-height: 1.3em; 
-            position: absolute;
             color: #F7714D;
-            right: 250px;
-            margin-top:35px;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
+            text-decoration: underline;
         }
         
         div.scrollup:hover {
@@ -125,55 +170,20 @@
         
         .navbar {
             font-family: 'Noto Sans', sans-serif;
-            position: fixed;
+            position: relative;
             margin: 0px;
             padding: 0px;
             bottom: 0px;
-            width: 100%;
-            height: 110px;
+            height: 90px;
             z-index: 1;
             left: 0px;
         }
-             
+            
         
-        div.sidenav {
-        }
-        
-        .arrows {
-            font-family: 'Noto Sans', sans-serif;
-            color: #F7714D;
-            position: fixed;
-            bottom: 350px;
-            left: 17px;
-            display:none;
-        }
-        
-        .scrollupside {
-            font-size: 22px;
-        }
-        
-        .scrollupside:hover {
-            font-style: italic;
-        }
-        
-        .rotate {
-            -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-            font-family: 'Noto Sans', sans-serif;
-            font-size: 17px;
-            line-height: 1.3em;
-            color: #F7714D;
-            position: fixed;
-            left: -120px;
-            bottom: 185px;
-            height: 30px;
-            width: 300px;
-            display:none;
-        }
         
         a {
             color: #F7714D;
-            text-decoration: none;
+            text-decoration: underline;
         }
         
         a:hover {
@@ -187,22 +197,17 @@
         }
         
         
-        div.logo {
+        div.logobig {
             width:200px;
-            top: 25px;
-            right: 25px;
-            position:absolute;
+            top: 2%;
+            right: 2%;
+            position: absolute;
             display:block;
         }
         
-        @media screen and (max-width: 1000px) {
-            .credit {display: none;}
-            .scrollup {display: none;}
-            .rotate {display:block;}
-            .arrows {display:block;}
-}
         
-
+        .thumbnail {
+            display:none;}
         
     </style>
 </head>
@@ -251,33 +256,30 @@
             <li>Full story at <a href="ThingsThatBurn.html">Things That Burn</a></li>
         </ol>
         
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        <div class=navbar class=full>
+         <div class=credit>
+            <a href="index.html">Read More Stories</a>
+          </div>
+        <div class=scrollup onclick="scrollToTop()">
+        Back to the Top
+        </div>
+        <div class=date>
+           The Deli Club © 2020
+        </div>
+        </div>   
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        
     </div>
     
     <div class=logo>
         <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
     </div>
     
-    <div class=navbar class=full>
-         <div class=credit>
-            <a href="index.html">←</a> Written<br> by Irin Chitman
-        </div>
-        <div class=scrollup onclick="scrollToTop()">
-        ↑ 
-        </div>
-        <div class=date>
-           <br> The Deli Club © 2020
-        </div>
-    </div>      
-
-        <div class=rotate>
-        Stories by Irin Chitman
-        </div>
-        <div class=arrows>
-        <a href="index.html">←</a>
-        <div class=scrollupside onclick="scrollToTop()">
-         ↑ 
-        </div>
-        </div>     
     
     <script> 
         function scrollToTop() { 
