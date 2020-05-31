@@ -17,6 +17,8 @@
     <meta property="og:description"        content="To everyone, boiled water right now is probably just boiled water. But if you take a closer and slower look, you could see a whole ocean in there. Come discover the stages of boiled water." />
     <meta property="og:image"              content="http://thedeli.club/Thingsthatburn_Thumbnail.jpg" />
     
+    <meta name="viewport" content="width=device-width, initial-scale=.85">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166971152-1"></script>
 <script>
@@ -27,8 +29,8 @@
   gtag('config', 'UA-166971152-1');
 </script>
     
-    
     <style>
+
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>    
@@ -48,7 +50,7 @@
         h1 {
             font-weight: 400;
             font-size: 42px;
-            letter-spacing: 0.015em;
+            letter-spacing: 0em;
             line-height: inherit;
             color: #F7714D;
             padding-right: 0px;
@@ -66,12 +68,6 @@
             letter-spacing: inherit;
             line-height: 1.6em;
         }   
-        
-        p.quotation {
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        
         
         h2 {
             font-family: 'Noto Sans', sans-serif;
@@ -117,25 +113,14 @@
             margin: 00px;
         }
         
-        ol.caption {
-            padding-top: 0px;
-            margin-top: 0px;
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 11px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }
-        
         #superscript {
             font-size: 21px;
         }
         
         div.title {
-            margin-top: 50px;
-            margin-left: 50px;
-            margin-right: 50px;
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-right: 5%;
             margin-bottom: 0px;
             width: 300px;
             float:left;
@@ -143,10 +128,10 @@
         }
         
         div.stories {
-            margin-top: 50px;
-            margin-right: 50px;
-            margin-left: 50px;
-            margin-bottom: 150px;
+            margin-top: 4%;
+            margin-right: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
             padding: 0px;
             float: left;
             max-width: 550px;
@@ -155,30 +140,36 @@
         
         
         div.credit {
-            font-size: 17px;
-            position: absolute;
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
             color: #F7714D;
-            left: 50px;
-            margin-top:20px;
-            
+            text-align: center;
+            position: relative;
+            margin-top:10px;
         }
         
          div.date {
-            font-size: 17px;
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
             line-height: 1.3em;
-            position: absolute;
-            color: #F7714D;
-            right: 50px;
-            margin-top:20px;
+            color: #7A3B27;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
         }
         
          div.scrollup {
-            font-size: 22px;
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
             line-height: 1.3em; 
-            position: absolute;
             color: #F7714D;
-            right: 250px;
-            margin-top:35px;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
+            text-decoration: underline;
         }
         
         div.scrollup:hover {
@@ -187,55 +178,20 @@
         
         .navbar {
             font-family: 'Noto Sans', sans-serif;
-            position: fixed;
+            position: relative;
             margin: 0px;
             padding: 0px;
             bottom: 0px;
-            width: 100%;
-            height: 110px;
+            height: 90px;
             z-index: 1;
             left: 0px;
         }
-             
+            
         
-        div.sidenav {
-        }
-        
-        .arrows {
-            font-family: 'Noto Sans', sans-serif;
-            color: #F7714D;
-            position: fixed;
-            bottom: 350px;
-            left: 17px;
-            display:none;
-        }
-        
-        .scrollupside {
-            font-size: 22px;
-        }
-        
-        .scrollupside:hover {
-            font-style: italic;
-        }
-        
-        .rotate {
-            -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-            font-family: 'Noto Sans', sans-serif;
-            font-size: 17px;
-            line-height: 1.3em;
-            color: #F7714D;
-            position: fixed;
-            left: -120px;
-            bottom: 185px;
-            height: 30px;
-            width: 300px;
-            display:none;
-        }
         
         a {
             color: #F7714D;
-            text-decoration: none;
+            text-decoration: underline;
         }
         
         a:hover {
@@ -249,20 +205,17 @@
         }
         
         
-        div.logo {
+        div.logobig {
             width:200px;
-            top: 25px;
-            right: 25px;
-            position:absolute;
+            top: 2%;
+            right: 2%;
+            position: absolute;
             display:block;
         }
         
-        @media screen and (max-width: 1000px) {
-            .credit {display: none;}
-            .scrollup {display: none;}
-            .rotate {display:block;}
-            .arrows {display:block;}
-}
+        
+        .thumbnail {
+            display:none;}
         
     </style>
 </head>
@@ -380,36 +333,32 @@
         
      <img class=thumbnail src="Thingsthatburn_Thumbnail.jpg" style="width:100%;display:none;">
        
-    </div>
-    
-    
-    <div class=logo>
-        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
-    </div>
-    
-    
-    <div class=navbar class=full>
+      <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        <div class=navbar class=full>
          <div class=credit>
-            <a href="index.html">←</a> Stories <br> Written by Irin Chitman
-        </div>
+            <a href="index.html">Read More Stories</a>
+          </div>
         <div class=scrollup onclick="scrollToTop()">
-        ↑ 
+        Back to the Top
         </div>
         <div class=date>
-           <br> © 2020
+           The Deli Club © 2020
         </div>
-    </div>      
-
-        <div class=rotate>
-        Stories by Irin Chitman
-        </div>
-        <div class=arrows>
-        <a href="index.html">←</a>
-        <div class=scrollupside onclick="scrollToTop()">
-         ↑ 
-        </div>
-        </div>    
+        </div>   
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    </svg>    
+        
+    </div>
     
+    
+    
+    <div class=logobig>
+        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
+    </div>
+   
     
     <script> 
         function scrollToTop() { 
