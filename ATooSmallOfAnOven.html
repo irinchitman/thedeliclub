@@ -4,14 +4,21 @@
     <title>A Too Small of An Oven</title>
     
     <link rel="icon" href="DeliClub.png" type="image/gif" sizes="16x16">
-    
+       
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">   
-   
+    
+    <meta property="og:url"                content="http://thedeli.club/ATooSmallOfAnOven.html" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="A Too Small of An Oven" />
+    <meta property="og:description"        content="Figuring out turkey when you're not American." />
+    <meta property="og:image"              content="http://thedeli.club/DeliClubThumbnail.jpg" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=.85">
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166971152-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -21,263 +28,75 @@
   gtag('config', 'UA-166971152-1');
 </script>
     
-    <style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="main.css">
 
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>    
-        
-        html {
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        body {
-            background-color: #FFFFFF;
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        
-        h1 {
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            font-size: 36px;
-            letter-spacing: 0em;
-            line-height: 1.2em;
-            color: #F7714D;
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-top: 0px;
-            padding-bottom: 50px;
-            margin: 0px;
-        }
-        
-        p {
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            font-size: 18px;
-            color: #3D1E14;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }   
-        
-        h2 {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 18px;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-            color: #F7714D;
-            padding-top: 0px;
-        }
-        
-ol.footnotes {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-            padding: 0px;
-            margin: 15px;
-            width: 85%;
-            display: inline-block;
-            
-        }
-        
-        ol.ingredients {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 200;
-            font-size: 14px;
-            color: #F7714D;
-            letter-spacing: .02em;
-            line-height: 18px;
-            list-style-type:;
-            padding-top: 10px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-bottom: 9px;
-            margin: 0px;
-        }
-        
-         ol.caption {
-            padding-top: 0px;
-            margin-top: 0px;
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 11px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }
-        
-        ol.reference {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-            padding: 0px;
-            margin: 15px;
-            width: 85%;
-            display: inline-block;
-        }
-        
-        li {
-            float: left;
-            clear: both;
-            list-style-position: outside;
-}
-         }
-        
-        ul {
-            float: left;
-            clear: both;
-            list-style-position: outside;
-            padding: 0px 40px 0px 0px;
-         }
-        
-        #superscript {
-            font-size: 21px;
-        }
-        
-        div.title {
-            margin-top: 4%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 0px;
-            width: 300px;
-            float:left;
-            z-index: 0;
-        }
-        
-        div.stories {
-            margin-top: 4%;
-            margin-right: 5%;
-            margin-left: 5%;
-            margin-bottom: 5%;
-            padding: 0px;
-            float: left;
-            max-width: 550px;
-            z-index: 0;
-        }
-        
-        
-        div.credit {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            color: #F7714D;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-        }
-        
-         div.date {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            line-height: 1.3em;
-            color: #7A3B27;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-        }
-        
-         div.scrollup {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            line-height: 1.3em; 
-            color: #F7714D;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-            text-decoration: underline;
-        }
-        
-        div.scrollup:hover {
-            font-style: italic;
-        }
-        
-        .navbar {
-            font-family: 'Noto Sans', sans-serif;
-            position: relative;
-            margin: 0px;
-            padding: 0px;
-            bottom: 0px;
-            height: 90px;
-            z-index: 1;
-            left: 0px;
-        }
-            
-        
-        
-        a {
-            color: #F7714D;
-            text-decoration: underline;
-        }
-        
-        a:hover {
-            font-style: italic;
-        }
-        
-        #superinbody {
-            font-size: 10px;
-            color: #F7714D;
-            line-height: 10px;
-        }
-        
-        
-        div.logobig {
-            width:200px;
-            top: 2%;
-            right: 2%;
-            position: absolute;
-            display:block;
-        }
-        
-        
-        .thumbnail {
-            display:none;}
-        
-    </style>
 </head>
     
 <body>
-    <div class=title>
-        <h1>A Too Small of An Oven <sup id="superscript">2014</sup></h1>
+
+<div class=stickybar>  
+<div class=row>
+    <div class=header>
+        <h2 class="sticky"><a href="index.html"> stories</a></h2>
+         <h2 class="sticky">deli shop</h2> 
+        </div>    
+    </div> 
+</div>
+    
+<div class=content> 
+
+<div class=row>
+    
+    <div class=column>
+            <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+        
+        <h3>A Too Small of An Oven</h3>
+        
+
+        <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+        
+        
     </div>
     
-    <div class=stories>
+    <div class=hero>
         
-        <p><b>Not All Frozen Turkeys Were Created Equal said a sign on top of an open-top freezer filled with frozen turkeys at Whole Foods. I had been standing in front of the freezer for quite a few minutes, just staring at the birdies in white bodysuits<sup id="superinbody">1</sup>, and acting inconspicuous as I eavesdropped on the debate between two ladies on the other side. Using my inner detective instinct, I quickly deduced that these two ladies—in their 50s, were friends or partners. They would be having their one turkey together and were trying to decide which turkey they should get—eighteen pounds or twenty-two, numbers that were meaningless to me for one, I did not cook and two, I only knew the metric<sup id="superinbody">2</sup> system.</b></p>
+         <svg class=reportstarts height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
         
-        <p>I reached my hand down into the mini Antarctic pit, running my fingers over the frozen birdies, feeling the cold gentle bounce of their skins or rather of the plastic that wrapped around them. I thought back to the time when these birdies were special to me. A similar image of an open-top freezer entered my mind and suddenly I found myself 8,559 miles across the Atlantic Ocean back in Bangkok and back in my primary school uniform with thick glasses and french braided hair. I stood in front of an open-top freezer, but now in a much smaller supermarket<sup id="superinbody">3</sup>—quarter the size of Whole Foods. Behind me stood rows and rows of tightly packed American imported goods stacked up as high as the ceiling. Every year, I begged my mother to get turkey for Christmas at this very spot<sup id="superinbody">4</sup>. But, we never did. Every year, she had an excuse for why we could not get it. It took too long to thaw. The weather was too hot. It would thaw by the time we got home. It was too expensive. But my favorite was, “Our oven is too small.” </p>
+        <div class=report>
+
+        <p class=stories><b>Not All Frozen Turkeys Were Created Equal said a sign on top of an open-top freezer filled with frozen turkeys at Whole Foods. I had been standing in front of the freezer for quite a few minutes, just staring at the birdies in white bodysuits<sup id="superinbody">1</sup>, and acting inconspicuous as I eavesdropped on the debate between two ladies on the other side. Using my inner detective instinct, I quickly deduced that these two ladies—in their 50s, were friends or partners. They would be having their one turkey together and were trying to decide which turkey they should get—eighteen pounds or twenty-two, numbers that were meaningless to me for one, I did not cook and two, I only knew the metric<sup id="superinbody">2</sup> system.</b></p>
         
-        <p>Suddenly, I heard a commotion down at the Antartic pit. Something was moving. I snapped back into Whole Foods. If only real-time traveling was as fast as my day-dreaming, I would be in Thailand for Thanksgiving.</p>
+        <p class=stories>I reached my hand down into the mini Antarctic pit, running my fingers over the frozen birdies, feeling the cold gentle bounce of their skins or rather of the plastic that wrapped around them. I thought back to the time when these birdies were special to me. A similar image of an open-top freezer entered my mind and suddenly I found myself 8,559 miles across the Atlantic Ocean back in Bangkok and back in my primary school uniform with thick glasses and french braided hair. I stood in front of an open-top freezer, but now in a much smaller supermarket<sup id="superinbody">3</sup>—quarter the size of Whole Foods. Behind me stood rows and rows of tightly packed American imported goods stacked up as high as the ceiling. Every year, I begged my mother to get turkey for Christmas at this very spot<sup id="superinbody">4</sup>. But, we never did. Every year, she had an excuse for why we could not get it. It took too long to thaw. The weather was too hot. It would thaw by the time we got home. It was too expensive. But my favorite was, “Our oven is too small.” </p>
         
-        <p>The ladies finally decided on twenty-two. They lifted up the weighty bird and plopped it into their cart. Right when they were about to roll away, I blurted out in my usual high pitch <i>kawaii</i> <sup id="superinbody">5</sup> voice, “How do you pick turkey?” The ladies looked at me, then at each other, then back at me again perhaps checking whether my existence was a hallucination and questioning whether my question was for real. One of them had curly puffy pepper hair with glasses and the other straight long grey ponytail with buck teeth.</p>
+        <p class=stories>Suddenly, I heard a commotion down at the Antartic pit. Something was moving. I snapped back into Whole Foods. If only real-time traveling was as fast as my day-dreaming, I would be in Thailand for Thanksgiving.</p>
         
-        <p>“Are you planning to cook turkey?” The curly pepper hair lady asked me suspiciously.</p>
+        <p class=stories>The ladies finally decided on twenty-two. They lifted up the weighty bird and plopped it into their cart. Right when they were about to roll away, I blurted out in my usual high pitch <i>kawaii</i> <sup id="superinbody">5</sup> voice, “How do you pick turkey?” The ladies looked at me, then at each other, then back at me again perhaps checking whether my existence was a hallucination and questioning whether my question was for real. One of them had curly puffy pepper hair with glasses and the other straight long grey ponytail with buck teeth.</p>
         
-        <p>No, not really.</p>
+        <p class=stories>“Are you planning to cook turkey?” The curly pepper hair lady asked me suspiciously.</p>
         
-        <p>“I think so. But I don’t really know how.” I stammered out.</p>
+        <p class=stories>No, not really.</p>
         
-        <p>“Well, it really depends how big you want your turkey to be. These ones have no antibiotics and are more expensive. The bigger they get, the more expensive they are.” Her voice was much rougher than I expected.</p>
+        <p class=stories>“I think so. But I don’t really know how.” I stammered out.</p>
         
-        <p>Antibiotics?</p>
+        <p class=stories>“Well, it really depends how big you want your turkey to be. These ones have no antibiotics and are more expensive. The bigger they get, the more expensive they are.” Her voice was much rougher than I expected.</p>
         
-        <p>Oh right, not all turkeys were created equal.</p>
+        <p class=stories>Antibiotics?</p>
         
-        <p>An organic free-range turkey from Whole Foods would cost you almost three times as much as a regular turkey from Stop and Shop. Her answer was not what I expected. I thought there would be more tricks to it like how you would flick a watermelon and listen for a hollow echo to determine it was good. I glanced at the prices of the turkeys. Eighteen-Twenty-Six. Twenty-Eight-Twenty-Four. “You should buy it ahead of time ‘cause it will take at least four days to thaw and closer to the date they should have fresh one as well, but still it will take two to three days.” The ponytail lady added on. She was much gentler than the curly one. I diligently took notes as if I were preparing for an exam. FRESH ONES. I thanked them. They wished me luck and rolled away.
+        <p class=stories>Oh right, not all turkeys were created equal.</p>
+        
+        <p class=stories>An organic free-range turkey from Whole Foods would cost you almost three times as much as a regular turkey from Stop and Shop. Her answer was not what I expected. I thought there would be more tricks to it like how you would flick a watermelon and listen for a hollow echo to determine it was good. I glanced at the prices of the turkeys. Eighteen-Twenty-Six. Twenty-Eight-Twenty-Four. “You should buy it ahead of time ‘cause it will take at least four days to thaw and closer to the date they should have fresh one as well, but still it will take two to three days.” The ponytail lady added on. She was much gentler than the curly one. I diligently took notes as if I were preparing for an exam. FRESH ONES. I thanked them. They wished me luck and rolled away.
         </p>
         
-        <p>Now it was just me alone with the birdies. Considering the fact that I had already burnt a pot roast chicken over sophomore year Thanksgiving<sup id="superinbody">6</sup>. I realized that the chances of me being able to cook turkey perfectly is slim. I looked over at the chicken tender in the compartment next to the turkey, grabbed two packets and thought to myself, “Our oven is too small anyway.”</p>
+        <p class=stories>Now it was just me alone with the birdies. Considering the fact that I had already burnt a pot roast chicken over sophomore year Thanksgiving<sup id="superinbody">6</sup>. I realized that the chances of me being able to cook turkey perfectly is slim. I looked over at the chicken tender in the compartment next to the turkey, grabbed two packets and thought to myself, “Our oven is too small anyway.”</p>
+        
         
         <ol type="1" class=footnotes>
             <li>
@@ -290,39 +109,115 @@ ol.footnotes {
             <li><i>Kawaii</i> is a Japanese terms that means cute, typically innocent. To achieve the <i>Kawaii</i> look, titlt your head to the right, open your eyes as big as you can, pucker you lips, point your left or right index finger to you chin and look up. Perfect.</li>
             <li>Full story at <a href="ThingsThatBurn.html">Things That Burn</a></li>
         </ol>
+            
+        </div>
+    </div>  
+    
+</div>
         
-        <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+<div class=row>
+<div class=header>
+    <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
         </svg>
-        <div class=navbar class=full>
-         <div class=credit>
-            <a href="index.html">Read More Stories</a>
-          </div>
-        <div class=scrollup onclick="scrollToTop()">
-        Back to the Top
-        </div>
-        <div class=date>
-           The Deli Club © 2020
-        </div>
+        
+        
+        <div class=full>
+                       
         </div>   
-        <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
-        </svg>
         
     </div>
-    
-    <div class=logobig>
-        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
+        </div>
+<div class=row>
+    <div class=header><h2>more stories</h2></div>
+        
+        </div>
+        
+
+<div class=row>
+    <div class=column><a href="SourCherry.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="SourCherry_Thumbnail.jpg">
+        <h1>Sour Cherry</h1>
+        <p>An Investigation into Thai Cherries & Recipe for Cherry Soda</p>   
+        
+         <h2>+recipe</h2>
+        </a>
+    </div>  
+        <div class=column><a href="ThingsThatBurn.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="Thingsthatburn_Thumbnail.jpg">
+        <h1>Things That Burn</h1>
+        <p>Discover the stages of boiled water mentioned in ancient Chinese poems</p>
+    </a></div>
+    <div class=column><a href="CalamansiMetrics.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="CalamansiMetrics_Thumbnail.jpg">
+        <h1>Calamansi Metrics</h1>
+        <p>How the Philippine lime captures the heart of everyone it meets, but yet remains incognito internationally.</p>
+        <h2>+recipe</h2>
+    </a></div>   
+</div>
+        
+        
+<div class=row>
+<div class=header>
+    <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        
+        
+        <div class=full>
+             <h2 class=scroll onclick="scrollToTop()">
+            Back to the Top
+            </h2>
+            <h2>
+           The Deli Club © 2020
+            </h2>
+        </div>   
     </div>
-    
+        </div>
+        
+    <img .thumbnail scr="DeliClubThumbnail.jpg">
+        
+
+    <div class=logobig id=logobig>
+        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
+    </div>   
+        
+    </div>
+   
+        
     
     <script> 
         function scrollToTop() { 
             window.scrollTo(0, 0); 
         } 
         
-     </script> 
+     </script>   
+    
+
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logobig").style.width = "110px";
+  } else {
+    document.getElementById("logobig").style.width = "200px";
+  }
+}
+</script>
+    
+    
     
     
 </body>
-    
