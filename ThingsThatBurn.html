@@ -4,12 +4,11 @@
     <title>Things That Burn</title>
     
     <link rel="icon" href="DeliClub.png" type="image/gif" sizes="16x16">
-    
+       
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">   
-    
     
     <meta property="og:url"                content="http://thedeli.club/ThingsThatBurn.html" />
     <meta property="og:type"               content="article" />
@@ -19,7 +18,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=.85">
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166971152-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -29,317 +28,115 @@
   gtag('config', 'UA-166971152-1');
 </script>
     
-    <style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="main.css">
 
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>    
-        
-        html {
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        body {
-            background-color: #FFFFFF;
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        
-        h1 {
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            font-size: 36px;
-            letter-spacing: 0em;
-            line-height: 1.2em;
-            color: #F7714D;
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-top: 0px;
-            padding-bottom: 50px;
-            margin: 0px;
-        }
-        
-        p {
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            font-size: 18px;
-            color: #3D1E14;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }   
-        
-        h2 {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 18px;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-            color: #F7714D;
-            padding-top: 0px;
-        }
-        
-        ol.footnotes {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-            padding: 0px;
-            margin: 15px;
-            width: 85%;
-            display: inline-block;
-            
-        }
-        
-        ol.ingredients {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 200;
-            font-size: 14px;
-            color: #F7714D;
-            letter-spacing: .02em;
-            line-height: 18px;
-            list-style-type:;
-            padding-top: 10px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-bottom: 9px;
-            margin: 0px;
-        }
-        
-         ol.caption {
-            padding-top: 0px;
-            margin-top: 0px;
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 11px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }
-        
-        ol.reference {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-            padding: 0px;
-            margin: 15px;
-            width: 85%;
-            display: inline-block;
-        }
-        
-        ol {
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        li {
-            float: left;
-            clear: both;
-            list-style-position: outside;
-}
-         }
-        
-        ul {
-            float: left;
-            clear: both;
-            list-style-position: outside;
-            padding: 0px 40px 0px 0px;
-         }
-        
-        #superscript {
-            font-size: 21px;
-        }
-        
-        div.title {
-            margin-top: 4%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 0px;
-            width: 300px;
-            float:left;
-            z-index: 0;
-        }
-        
-        div.stories {
-            margin-top: 4%;
-            margin-right: 5%;
-            margin-left: 5%;
-            margin-bottom: 5%;
-            padding: 0px;
-            float: left;
-            max-width: 550px;
-            z-index: 0;
-        }
-        
-        
-        div.credit {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            color: #F7714D;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-        }
-        
-         div.date {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            line-height: 1.3em;
-            color: #7A3B27;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-        }
-        
-         div.scrollup {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            line-height: 1.3em; 
-            color: #F7714D;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-            text-decoration: underline;
-        }
-        
-        div.scrollup:hover {
-            font-style: italic;
-        }
-        
-        .navbar {
-            font-family: 'Noto Sans', sans-serif;
-            position: relative;
-            margin: 0px;
-            padding: 0px;
-            bottom: 0px;
-            height: 90px;
-            z-index: 1;
-            left: 0px;
-        }
-            
-        
-        
-        a {
-            color: #F7714D;
-            text-decoration: underline;
-        }
-        
-        a:hover {
-            font-style: italic;
-        }
-        
-        #superinbody {
-            font-size: 10px;
-            color: #F7714D;
-            line-height: 10px;
-        }
-        
-        
-        div.logobig {
-            width:200px;
-            top: 2%;
-            right: 2%;
-            position: absolute;
-            display:block;
-        }
-        
-        
-        .thumbnail {
-            display:none;}
-        
-    </style>
 </head>
     
 <body>
-    <div class=title>
-        <h1>Things That Burn <sup id="superscript">2020</sup></h1>
+
+<div class=stickybar>  
+<div class=row>
+    <div class=header>
+        <h2 class="sticky"><a href="index.html"> stories</a></h2>
+         <h2 class="sticky">deli shop</h2> 
+        </div>    
+    </div> 
+</div>
+    
+    <div class=content> 
+
+<div class=row>
+    
+    <div class=column>
+            <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+        
+        <h3>Things That Burn</h3>
+        
+            <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+        
+        
     </div>
     
-    <div class=stories>
+    <div class=hero>
+        
+        <svg class=reportstarts height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        
+        <div class=report>
+        <p class="stories"> <b>1. Hot Water</b></p>
+        
+        <p class="stories">My t-shirt soaked. Instant noodle oozed on my chest. The neckline of my t-shirt had trapped the sluggish noodles, like a pasta spoon scooping up spaghetti. Some string slid through while some hung around.</p>
             
-        <p><b>1. Hot Water</b></p>
+        <p class=stories>A bowl shattered.</p>
+            
+        <p class=stories>I maniacally clawed out the boiled noodles and rubbed and rubbed and rubbed.</p>
         
-        <p>My t-shirt soaked. Instant noodle oozed on my chest. The neckline of my t-shirt had trapped the sluggish noodles, like a pasta spoon scooping up spaghetti. Some string slid through while some hung around.</p>
+        <p class=stories>“Why did you let your daughter eat <i>Mama</i><sup id="superinbody">1</sup>?”, the paediatrician scorned my mother.</p>
         
-        <p>A bowl shattered.</p>
+        <p class="stories">My mother did not let me eat <i>Mama</i>. I had eaten <i>Mama</i> because my mother had not been there to prevent me. She had not been home that fateful evening and I had been left under the care of my nannies.</p>
         
-        <P>I maniacally clawed out the boiled noodles and rubbed and rubbed and rubbed.</P>
+        <p class="stories">When I was eight, I got to eat certain dishes only when my parents were both not home. Eating <i>Yum Pla Kapong</i><sup id="superinbody">2</sup> when they were at weddings and eating <i>Mama</i> when they were at funerals. Since my parents were rarely absent as a package, getting to eat these dishes was rare golden opportunistic moment.</p>
+            
+        <p class="stories">That fateful night, I planned to eat <i>Mama</i>.</p>
         
-        <p>“Why did you let your daughter eat <i>Mama</i><sup id="superinbody">1</sup>?”, the paediatrician scorned my mother.</p>
+        <p class="stories">Just like with tea, there are different methods in preparing <i>Mama</i>. Most convenient store &mdash; 7-11, Family Mart, visitors use the infusion method: pressing hot water from the hot kettle, letting the noodles sink and steam in its industrial plastic container and its non-recyclable laminated foil cover, and waiting till the noodles soften.</p>
+            
+        <p class="stories">That night, my nanny used the decoction<sup id="superinbody">3</sup> method.</p>
+            
+        <p class="stories">Decoction is the ancient Chinese way of making tea. It is to boil the tea &mdash; usually hard barks and herbs, on the stove over time. To bring water to a boil, nowadays, has a specific scientific meaning. The water reaches its boiling point at 100°C or (212°F). In ancient Chinese tea poems, however, the word “boil” was used more broadly and liberally and the temperature of “boiling” water varied.</p>
         
-        <p>My mother did not let me eat <i>Mama</i>. I had eaten <i>Mama</i> because my mother had not been there to prevent me. She had not been home that fateful evening and I had been left under the care of my nannies.</p>
-        
-        <p>When I was eight, I got to eat certain dishes only when my parents were both not home. Eating <i>Yum Pla Kapong</i><sup id="superinbody">2</sup> when they were at weddings and eating <i>Mama</i> when they were at funerals. Since my parents were rarely absent as a package, getting to eat these dishes was rare golden opportunistic moment.</p>
-        
-        <p>That fateful night, I planned to eat <i>Mama</i>. </p>
-        
-        <p>Just like with tea, there are different methods in preparing <i>Mama</i>. Most convenient store &mdash; 7-11, Family Mart, visitors use the infusion method: pressing hot water from the hot kettle, letting the noodles sink and steam in its industrial plastic container and its non-recyclable laminated foil cover, and waiting till the noodles soften.</p>
-        
-        <p>That night, my nanny used the decoction<sup id="superinbody">3</sup> method.</p>
-        
-        <p>Decoction is the ancient Chinese way of making tea. It is to boil the tea &mdash; usually hard barks and herbs, on the stove over time. To bring water to a boil, nowadays, has a specific scientific meaning. The water reaches its boiling point at 100°C or (212°F). In ancient Chinese tea poems, however, the word “boil” was used more broadly and liberally and the temperature of “boiling” water varied.</p>
-        
-        <p>Lu Yu 陆羽 (circa 733-804 A.D.), a Tang Dynasty<sup id="superinbody">4</sup> Chinese Tea Master, vividly described three stages of boiling water in his book Chá Jīng 茶经 (Book of Tea, 780 A.D.).</p>
-        
-        <p class=quotation>《茶经》:“其沸如鱼目,微有声为一沸,缘边如涌泉连珠为二沸,腾波鼓浪为三沸,已上水老不可食也。”</p>
-        
-        <p class=quotation>The first sight of fish eyes, accompanied by whimpers is the first stage of boil.<br>
+        <p class="stories">Lu Yu 陆羽 (circa 733-804 A.D.), a Tang Dynasty<sup id="superinbody">4</sup> Chinese Tea Master, vividly described three stages of boiling water in his book Chá Jīng 茶经 (Book of Tea, 780 A.D.).</p>
+            
+        <p class="stories">《茶经》:“其沸如鱼目,微有声为一沸,缘边如涌泉连珠为二沸,腾波鼓浪为三沸,已上水老不可食也。”</p>
+            
+        <p class="stories">The first sight of fish eyes, accompanied by whimpers is the first stage of boil.<br>
         When the edges turn into gushing springs and strings of pearls, it is the second.<br>
         When the water soared like tumbling drumming waves, it is the third.<sup id="superinbody">5</sup></p>
-        
-        <a href="https://www.tate.org.uk/art/artworks/turner-snow-storm-steam-boat-off-a-harbours-mouth-n00530"><img src="SnowStormTurner.jpg" alt="SnowStormTurner" style="width:100%;"></a>
+            
+        <a href="https://www.tate.org.uk/art/artworks/turner-snow-storm-steam-boat-off-a-harbours-mouth-n00530"><img src="SnowStormTurner.jpg" alt="SnowStormTurner" style="width:100%;margin-bottom: 5px;"></a>
         <ol class=caption>Joseph Mallord William Turner - Snow Storm - Steam-Boat off a Harbour’s Mouth - exhibited 1842 Photo © Tate CC-BY-NC-ND 3.0 (Unported)</ol>
         
-        <p>Like wise, Lü Dongbin (circa 796-1016 A.D.) 呂洞賓, a Tang  scholar and poet<sup id="superinbody">6</sup>, described a wave-like boiling water in his poem Dà Yún Sì Chá Shī 大雲寺茶詩 (Tea of Da Yun Temple). However, the waves were not preceded by fish eyes. Instead they were preceded by shrimp eyes.</p>
-        
-        <p class=quotation>《大云寺茶诗》: <br>
+        <p class="stories">Like wise, Lü Dongbin (circa 796-1016 A.D.) 呂洞賓, a Tang  scholar and poet<sup id="superinbody">6</sup>, described a wave-like boiling water in his poem Dà Yún Sì Chá Shī 大雲寺茶詩 (Tea of Da Yun Temple). However, the waves were not preceded by fish eyes. Instead they were preceded by shrimp eyes.</p>
+            
+        <p class="stories">《大云寺茶诗》: <br>
             蝦眼湯翻細浪俱 </p>
-        <p class=quotation>Shrimp eyes current turned <br> entirely into fine waves.</p>
+        <p class="stories">Shrimp eyes current turned <br> entirely into fine waves.</p>
+            
+        <p class="stories">Later, during the Song dynasty, a calligrapher named Sushi 苏轼 (1037-1101 AD) described another stage of boiling water&mdash; xièyan 蟹眼 crab eyes<sup id="superinbody">7</sup>, in his poem Shì Yuàn Jiānchá 试院煎茶 (Trial Tea).</p>
+            
+        <p class=stories>Later, during the Song dynasty, a calligrapher named Sushi 苏轼 (1037-1101 AD) described another stage of boiling water&mdash; xièyan 蟹眼 crab eyes<sup id="superinbody">7</sup>, in his poem Shì Yuàn Jiānchá 试院煎茶 (Trial Tea).</p>
         
-        <p>Later, during the Song dynasty, a calligrapher named Sushi 苏轼 (1037-1101 AD) described another stage of boiling water&mdash; xièyan 蟹眼 crab eyes<sup id="superinbody">7</sup>, in his poem Shì Yuàn Jiānchá 试院煎茶 (Trial Tea).</p>
-        
-        <p class=quotation>《试院煎茶》: <br>
+        <p class=stories>《试院煎茶》: <br>
             蟹眼已过鱼眼生 <br>
             飕飕预作松风鸣</p>
         
-        <p class=quotation>The crab eyes passed. Fish eyes are born. <br>
+        <p class=stories>The crab eyes passed. Fish eyes are born. <br>
             Sou Sou, comes the cry of the freed wind.
         </p>
-        <p>Since the sizes of shrimp eyes and crab eyes are quite close to each other, Shrimp-Eyes-Boiling-Water must be slightly cooler if not the same temperature as Crab-Eyes-Boiling-Water. Based on the poem above and the fact that crab eyes are smaller than fish eyes, Crab-Eyes-Boiling-Water has a lower temperature than that of Fish-Eyes-Boiling-Water. Many ancient Chinese poets agreed and recorded that Crab-Eyes-Boiling-Water is the most suitable temperature of boiling water to use for tea decoction. The water must be kept only at the Crab-Eyes stage.
+        <p class=stories>Since the sizes of shrimp eyes and crab eyes are quite close to each other, Shrimp-Eyes-Boiling-Water must be slightly cooler if not the same temperature as Crab-Eyes-Boiling-Water. Based on the poem above and the fact that crab eyes are smaller than fish eyes, Crab-Eyes-Boiling-Water has a lower temperature than that of Fish-Eyes-Boiling-Water. Many ancient Chinese poets agreed and recorded that Crab-Eyes-Boiling-Water is the most suitable temperature of boiling water to use for tea decoction. The water must be kept only at the Crab-Eyes stage.
         </p>
-        
-         <img src="Fisheyes.jpg" alt="Fisheyes" style="display: block; width:60%;margin-left: auto;margin-right: auto;">
-        
-        
-        <p>Since my nanny was preparing instant noodle not tea, the same delicacy was not deployed. She boiled the noodle in the water passed the crab eyes, the fish eyes, the gushing springs, into the tumbling waves. She knocked in an egg, broke in some Chinese cabbage and emptied out the pot into the serving bowl.
-        </p>
-        
-        <p>While I was walking from the kitchen to the dining room, holding that bowl of <i>Mama</i> sitting in the calming waves, I turned around to talk to my nanny and unknowingly poured the <i>Mama</i> and the waves onto myself.</p>
         
         <img src="Waves.jpg" alt="SnowStormTurner" style="width:100%;">
         
-       <ol type="1" class=footnotes>
+               <ol type="1" class=footnotes>
             <li>
             Mama มาม่า is a Thai instant noodle brand. Research has found that in Thailand, the sale of Mama goes up toward the end of the month. Toward the end of the month, most people no longer have enough money in their bank accounts to eat proper food. Just kidding, there's no research on this, but there should be.
             </li>
             <li>
-            Yum <a href="https://www.google.com/search?q=ayam+sardines&rlz=1C5CHFA_enTH898TH898&sxsrf=ALeKk03eTe7weA8xg-8HEOUrbmavb1nFNA:1589556965355&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiqtpSSmbbpAhXIXCsKHRTFAJ0Q_AUoAXoECA4QAw&biw=1190&bih=635">Pla Klapong</a> ยำปลากระป๋อง is spicy canned sardine in tomatoe sauce salad. Don't be fooled by the word salad. The only vegetable in this dish is sliced shallot.
+            Yum <a class=reference href="https://www.google.com/search?q=ayam+sardines&rlz=1C5CHFA_enTH898TH898&sxsrf=ALeKk03eTe7weA8xg-8HEOUrbmavb1nFNA:1589556965355&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiqtpSSmbbpAhXIXCsKHRTFAJ0Q_AUoAXoECA4QAw&biw=1190&bih=635">Pla Klapong</a> ยำปลากระป๋อง is spicy canned sardine in tomatoe sauce salad. Don't be fooled by the word salad. The only vegetable in this dish is sliced shallot.
             </li>
             <li>
             Doesn't it sound like Snape's potions class straight out of Hogwarts?
             </li>
             <li>
-            Tang Dynasty is considered the golden age of Chinese arts and culture. <a href="https://youtu.be/5HGHdWKhlCQ">Cháng'ān Shí'èr Shíchén 长安十二时辰 (The Longest Day in Chang'An)</a> &mdash; a Chinese drama based on the novel written by <a href="https://www.goodreads.com/book/show/39863330-broken-stars">Mo Boyong 马伯庸</a> , depicted this period beautifully and accurately.<br>
+            Tang Dynasty is considered the golden age of Chinese arts and culture. <a class="reference" href="https://youtu.be/5HGHdWKhlCQ">Cháng'ān Shí'èr Shíchén 长安十二时辰 (The Longest Day in Chang'An)</a> &mdash; a Chinese drama based on the novel written by <a class=reference href="https://www.goodreads.com/book/show/39863330-broken-stars">Mo Boyong 马伯庸</a> , depicted this period beautifully and accurately.<br>
             </li>
             <ul><u>Chinese Popular Culture Timeline (Like really simplified)</u><br></ul>
                 <ul>Qin Dynasty (221-207 BC) - <i>Great Wall of China, Terracotta Army, Hero</i></ul>
@@ -357,59 +154,133 @@
             Lü Dongbin was so accomplished and respected that he was elevated into the status of an immortal. He is one of the Eight Daoist Immortal. He's both a legend and a real person. 
             </li>
             <li>
-            Pi Rixiu 皮日休, another Tang poet, also mentioned Crab-Eyes in his poem <a href="https://www.tsiosophy.com/2018/07/miscellaneous-rhymes-tea/">Chá Zhòng Zá Yǒng 茶中雜詠 (Miscellaneous Rhymes on Tea)</a>. However, the word was not used in relation to the other stages of boiling water. 
+            Pi Rixiu 皮日休, another Tang poet, also mentioned Crab-Eyes in his poem <a  class="reference" href="https://www.tsiosophy.com/2018/07/miscellaneous-rhymes-tea/">Chá Zhòng Zá Yǒng 茶中雜詠 (Miscellaneous Rhymes on Tea)</a>. However, the word was not used in relation to the other stages of boiling water. 
            </li>  
         </ol>
         <ol class=reference>
            <u>Reference</u>
-            <li style="padding-top: 20px; width: 100%;"><a href="https://www.tsiosophy.com/author/">Owyoung, Steven  D. “Miscellaneous Rhymes on Tea.” Tsiosophy, 6 Sept. 2019, www.tsiosophy.com/2018/07/miscellaneous-rhymes-tea/.</a>
+            <li style="padding-top: 20px; width: 100%;"><a class=reference href="https://www.tsiosophy.com/author/">Owyoung, Steven  D. “Miscellaneous Rhymes on Tea.” Tsiosophy, 6 Sept. 2019, www.tsiosophy.com/2018/07/miscellaneous-rhymes-tea/.</a>
             </li>
             
-            <li style="padding-top: 20px;"><a href="http://epaper.gmw.cn/gmrb/html/2014-10/22/nw.D110000gmrb_20141022_7-12.htm">Qian, Cangshui. “Xiè Yǎn Chátāng [Crab Eye Tea Soup].” Guāngmíng Rìbào [Guangming Daily], 22 Oct. 2014.</a>
+            <li style="padding-top: 20px;"><a class=reference href="http://epaper.gmw.cn/gmrb/html/2014-10/22/nw.D110000gmrb_20141022_7-12.htm">Qian, Cangshui. “Xiè Yǎn Chátāng [Crab Eye Tea Soup].” Guāngmíng Rìbào [Guangming Daily], 22 Oct. 2014.</a>
             </li>
             
-            <li style="padding-top: 20px;"><a href="https://kknews.cc/culture/6bkgz6p.html">Shénme Yàng De Shuǐ Wēn Cái Huì Chūxiàn `Xiā Yǎn',`Xiè Yǎn',`Yú Mù'? [What Temperatures Are "Shrimp Eye", "Crab Eye", "Fish Eye" Water?], KKNEWS, 28 Aug. 2018, kknews.cc/culture/6bkgz6p.html.</a>
+            <li style="padding-top: 20px;"><a class=reference href="https://kknews.cc/culture/6bkgz6p.html">Shénme Yàng De Shuǐ Wēn Cái Huì Chūxiàn `Xiā Yǎn',`Xiè Yǎn',`Yú Mù'? [What Temperatures Are "Shrimp Eye", "Crab Eye", "Fish Eye" Water?], KKNEWS, 28 Aug. 2018, kknews.cc/culture/6bkgz6p.html.</a>
            </li>
-    </ol>
- 
+    </ol>   
+            
+        </div>
+    </div>  
+    
+</div>
         
-     <img class=thumbnail src="Thingsthatburn_Thumbnail.jpg" style="width:100%;display:none;">
-          
-        
-          <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="550" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+<div class=row>
+<div class=header>
+    <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
         </svg>
-        <div class=navbar class=full>
-         <div class=credit>
-            <a href="index.html">Read More Stories</a>
-          </div>
-        <div class=scrollup onclick="scrollToTop()">
-        Back to the Top
-        </div>
-        <div class=date>
-           The Deli Club © 2020
-        </div>
+        
+        
+        <div class=full>
+                       
         </div>   
-        <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="550" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
-    </svg> 
         
     </div>
+        </div>
+<div class=row>
+    <div class=header><h2>more stories</h2></div>
+        
+        </div>      
+        
+<div class=row>
+    <div class=column><a href="DreamyNoBakeCreamCheesePie.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="PeachCreamCheesePie_Thumbnail.jpg">
+        <h1>Dreamy No-Bake Cream Cheese Pie</h1>
+        <p>Whether you're Alice, or Haruhi, this easy recipe got your tea party covered.</p>    
+        <h2>+recipe</h2>
+    </a></div>    
     
+    <div class=column><a href="SourCherry.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="SourCherry_Thumbnail.jpg">
+        <h1>Sour Cherry</h1>
+        <p>An Investigation into Thai Cherries & Recipe for Cherry Soda</p>   
+        
+         <h2>+recipe</h2>
+        </a>
+    </div>    
+
+    <div class=column><a href="CalamansiMetrics.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="CalamansiMetrics_Thumbnail.jpg">
+        <h1>Calamansi Metrics</h1>
+        <p>How the Philippine lime captures the heart of everyone it meets, but yet remains incognito internationally.</p>
+        <h2>+recipe</h2>
+    </a></div>
     
+</div>
     
-    <div class=logobig>
+
+        
+<div class=row>
+<div class=header>
+    <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        
+        
+        <div class=full>
+             <h2 class=scroll onclick="scrollToTop()">
+            Back to the Top
+            </h2>
+            <h2>
+           The Deli Club © 2020
+            </h2>
+        </div>   
+    </div>
+        </div>
+        
+    <img .thumbnail scr="DeliClubThumbnail.jpg">
+        
+
+    <div class=logobig id=logobig>
         <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
+    </div>   
+        
     </div>
    
+        
     
     <script> 
         function scrollToTop() { 
             window.scrollTo(0, 0); 
         } 
         
-     </script> 
+     </script>   
+    
+
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logobig").style.width = "110px";
+  } else {
+    document.getElementById("logobig").style.width = "200px";
+  }
+}
+</script>
+    
+    
     
     
 </body>
-    
