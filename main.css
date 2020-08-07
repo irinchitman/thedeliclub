@@ -1,0 +1,353 @@
+     body {
+            background-color: #FFFFFF;
+            padding: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 50px;
+        }
+            
+        
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            font-size: 27px;
+            color: #F7714D;
+            letter-spacing: 0.01em;
+            line-height: 1.2em;
+            margin: 0px;
+            padding: 15px 0px 0px;
+        }
+        
+        
+        h1.baking {
+            color: #7A3B27;
+        }
+        
+        
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 18px;
+            color: #7A3B27;
+            letter-spacing: 0.1em;
+            margin: 0px;
+            padding: 15px 0px 15px;
+        }
+       
+       .sticky  {
+           color:  #F7714D;
+           margin-left: 0px;
+           margin-right: 15px;
+           float:left;
+           padding: 25px 0px 0 0;
+           text-decoration: underline;
+       }
+        
+       .scroll{
+        color:  #F7714D;
+        text-decoration: underline;
+        margin-right: 15px;
+        float:right;
+        padding: 15px 0px 15PX;
+       }
+       
+    
+       
+        .ingredient {
+            color:  #F7714D;
+        }
+       
+        
+        h3 {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            font-size: 36px;
+            color: #F7714D;
+            letter-spacing: 0.01em;
+            line-height: 1.2em;
+            margin: 0px;
+            padding: 15px 0px 50px 0px;
+        }
+       
+        .quote {
+           color: #7A3B27;
+           padding: 15px 0px 15px 0px;
+           font-style: italic;
+       }
+      
+      h4 {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            font-size: 39px;
+            color: #7A3B27;
+            font-style: italic;
+            letter-spacing: 0.01em;
+            line-height: 1.2em;
+            margin: 0px;
+            padding: 15px 0px 15px 0px;
+      }
+        
+        
+        
+        p {
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #3D1E14;
+            letter-spacing: inherit;
+            line-height: 1.6em;
+            margin: 8px 0 15px 0;
+            padding: 0 ;
+        }  
+        
+        .stories {
+            font-size: 18px;
+            margin-top: 18px;
+        }
+        
+        ol {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        ol.footnotes {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #7A3B27;
+            letter-spacing: inherit;
+            line-height: 1.6em;
+            padding: 0px;
+            margin: 15px;
+            width: 85%;
+            display: inline-block;
+            
+        }
+        
+        ol.ingredients {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            color: #F7714D;
+            letter-spacing: .02em;
+            line-height: 18px;
+            list-style-type:;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 0px;
+            padding-bottom: 9px;
+            margin: 0px;
+        }
+       
+       ol.ingredeints:first-child  {
+           background-color: aqua;
+       }
+        
+         ol.caption {
+            padding-top: 0px;
+            margin-top: 0px;
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 300;
+            font-size: 11px;
+            color: #7A3B27;
+            letter-spacing: inherit;
+            line-height: 1.6em;
+        }
+        
+        ol.reference {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #7A3B27;
+            letter-spacing: inherit;
+            line-height: 1.6em;
+            padding: 0px;
+            margin: 15px;
+            width: 85%;
+            display: inline-block;
+        }
+        
+        li {
+            float: left;
+            clear: both;
+            list-style-position: outside;
+}
+         }
+        
+        ul {
+            float: left;
+            clear: both;
+            list-style-position: outside;
+            padding: 0px 40px 0px 0px;
+         }
+        
+        #superscript {
+            font-size: 21px;
+        }
+        
+        
+        
+        div.content {
+            max-width: 1920px;
+            margin-top: 60px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        
+        div.nav {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 17px;
+            line-height: 1.3em;
+            position: fixed;
+            margin: 0px;
+            padding:0px;
+            bottom: 0px;
+            width: 100%;
+            height: 110px;
+        }
+        div.credit {
+            width: 100%;
+            height: 20px;
+            font-size: 15px;
+            color: #F7714D;
+            text-align: center;
+            position: relative;
+            margin-top:10px;
+        }
+            
+        
+        a {
+            color: #F7714D;
+            text-decoration: none;
+        }
+        
+        a.reference {
+            text-decoration: underline;
+        }
+        
+        h1:hover {
+            font-style: italic;
+        }
+        
+        h1.baking:hover{font-style: normal;}
+        
+        #superinbody {
+            font-size: 10px;
+            color: #F7714D;
+            line-height: 10px;
+        }
+        
+        
+        div.logobig {
+            width:200px;
+            top: 2%;
+            right: 2%;
+            position: fixed;
+            z-index: 2;
+        }
+        
+       
+        div.column {
+            float: left;
+            display: block;
+            position: relative;
+            
+        }
+        
+        div.hero {
+            float: left;
+            display: block;
+            position: relative;
+        }
+        
+        div.header {
+            float: left;
+            display: block;
+            position: relative;
+        }
+        
+        .thumbnail {
+            display:none;}
+        
+        @media only screen and (max-width: 768px) {
+            .column, .hero, .header, .report {
+                width: 100%;
+                    }
+            
+            .reportstarts {
+                display: none;
+            }
+            
+            .stories:first-child {margin-top: 50px;}
+        }
+        
+         @media only screen and (min-width: 768px) {
+            .column {
+                width: 30%;
+                padding: 0% 1% 0;
+                display: inline-block;
+                    }
+             .hero{
+                 width:62%;
+                 padding: 0% 1% 0;
+             }
+             
+             .report {
+                 width: 75%;
+                 margin: auto;
+             }
+             
+             .header {
+                 width: 94%;
+                 padding: 0 1% 0;
+             }
+             
+        }
+        
+        img {
+            width: 100%;
+            margin: auto;
+            display: block;
+            
+        }
+        
+        .menu {
+            padding: 15px 0 0 0;
+        }
+        
+        div.row {
+            clear:left;
+            display: block;
+            height: auto;
+        }
+       
+       div.row:last-child {
+           margin-bottom: 20px;
+       }  
+       
+       .stickybar {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 55px;
+           background-color: white;
+           padding-left: 5%;
+           padding-top: 1%;
+           z-index: 1;
+       }
+        .indexbar {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 55px;
+           background-color: white;
+           padding-left: 5%;
+           padding-top: 1%;
+           z-index: 1;
+       }
