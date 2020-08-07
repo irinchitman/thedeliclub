@@ -4,11 +4,12 @@
     <title>Sour Cherry</title>
     
     <link rel="icon" href="DeliClub.png" type="image/gif" sizes="16x16">
-    
+       
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">   
-   
+    
     <meta property="og:url"                content="http://thedeli.club/SourCherry.html" />
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="Sour Cherry" />
@@ -17,7 +18,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=.85">
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166971152-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -27,338 +28,219 @@
   gtag('config', 'UA-166971152-1');
 </script>
     
-    <style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="main.css">
 
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>    
-        
-        html {
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        body {
-            background-color: #FFFFFF;
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        
-        h1 {
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            font-size: 36px;
-            letter-spacing: 0em;
-            line-height: 1.2em;
-            color: #F7714D;
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-top: 0px;
-            padding-bottom: 50px;
-            margin: 0px;
-        }
-        
-        p {
-            font-family: 'Libre Baskerville', serif;
-            font-weight: 400;
-            font-size: 18px;
-            color: #3D1E14;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }   
-        
-        h2 {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 18px;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-            color: #F7714D;
-            padding-top: 0px;
-        }
-        
-   ol.footnotes {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-            padding: 0px;
-            margin: 15px;
-            width: 85%;
-            display: inline-block;
-            
-        }
-        
-        ol.ingredients {
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 200;
-            font-size: 14px;
-            color: #F7714D;
-            letter-spacing: .02em;
-            line-height: 18px;
-            list-style-type:;
-            padding-top: 10px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-bottom: 9px;
-            margin: 0px;
-        }
-        
-         ol.caption {
-            padding-top: 0px;
-            margin-top: 0px;
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 11px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-        }
-        
-        ol.reference {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            color: #7A3B27;
-            letter-spacing: inherit;
-            line-height: 1.6em;
-            padding: 0px;
-            margin: 15px;
-            width: 85%;
-            display: inline-block;
-        }
-        
-        li {
-            float: left;
-            clear: both;
-            list-style-position: outside;
-}
-         }
-        
-        ul {
-            float: left;
-            clear: both;
-            list-style-position: outside;
-            padding: 0px 40px 0px 0px;
-         }
-        
-        #superscript {
-            font-size: 21px;
-        }
-        
-        div.title {
-            margin-top: 4%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 0px;
-            width: 300px;
-            float:left;
-            z-index: 0;
-        }
-        
-        div.stories {
-            margin-top: 4%;
-            margin-right: 5%;
-            margin-left: 5%;
-            margin-bottom: 5%;
-            padding: 0px;
-            float: left;
-            max-width: 550px;
-            z-index: 0;
-        }
-        
-        
-        div.credit {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            color: #F7714D;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-        }
-        
-         div.date {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            line-height: 1.3em;
-            color: #7A3B27;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-        }
-        
-         div.scrollup {
-            width: 100%;
-            height: 20px;
-            font-size: 15px;
-            line-height: 1.3em; 
-            color: #F7714D;
-            text-align: center;
-            position: relative;
-            margin-top:10px;
-            text-decoration: underline;
-        }
-        
-        div.scrollup:hover {
-            font-style: italic;
-        }
-        
-        .navbar {
-            font-family: 'Noto Sans', sans-serif;
-            position: relative;
-            margin: 0px;
-            padding: 0px;
-            bottom: 0px;
-            height: 90px;
-            z-index: 1;
-            left: 0px;
-        }
-            
-        
-        
-        a {
-            color: #F7714D;
-            text-decoration: underline;
-        }
-        
-        a:hover {
-            font-style: italic;
-        }
-        
-        #superinbody {
-            font-size: 10px;
-            color: #F7714D;
-            line-height: 10px;
-        }
-        
-        
-        div.logobig {
-            width:200px;
-            top: 2%;
-            right: 2%;
-            position: absolute;
-            display:block;
-        }
-        
-        
-        .thumbnail {
-            display:none;}
-        
-    </style>
 </head>
     
 <body>
-    <div class=title>
-        <h1>Sour Cherry <sup id="superscript">2019</sup></h1>
-        
-         <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line></svg>
-        
-        <h2>Make roughly 400 ml of Concentration </h2>
-        
-        <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line></svg>
 
-        <h2><b>Ingredients</b></h2> 
+<div class=stickybar>  
+<div class=row>
+    <div class=header>
+        <h2 class="sticky"><a href="index.html"> stories</a></h2>
+         <h2 class="sticky">shop calmansi special</h2> 
+        </div>    
+    </div> 
+</div>
+    
+<div class=content> 
+
+<div class=row>
+    
+    <div class=column>
+            <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
         
-        <ol class=ingredients>
-            <b>Cherry Concentration</b>
-            <ol>400 ml of cherry juice, strained</ol>
-            <ol>300 g of sugar</ol>
-            <ol>20 g of lime juice</ol>
-            <ol>3-4 big pinches of salt</ol>
-        </ol>
-        <ol class=ingredients>
-            <b>Serving</b>
-            <ol>Ice</ol>
-            <ol>25 ml of cherry concentration</ol>
-            <ol>200 ml of soda</ol>
-        </ol>
+        <h3>Sour Cherry</h3>
         
-         <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="500" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line></svg>
+            <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+        
+            <h2 class=ingredient>Make roughly 400 ml of Concentration </h2>
+
+            <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+
+            <h2 class=ingredient><b>Ingredients</b></h2> 
+
+            <ol class=ingredients>
+                <b>Cherry Concentration</b>
+                <ol>400 ml of cherry juice, strained</ol>
+                <ol>300 g of sugar</ol>
+                <ol>20 g of lime juice</ol>
+                <ol>3-4 big pinches of salt</ol>
+            </ol>
+            <ol class=ingredients>
+                <b>Serving</b>
+                <ol>Ice</ol>
+                <ol>25 ml of cherry concentration</ol>
+                <ol>200 ml of soda</ol>
+            </ol>
+        <svg height="2" width="100%">
+                <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+            </svg>
+        
+        
+  
         
     </div>
     
-    <div class=stories>
+    <div class=hero>
         
-        <p> <b>“Mae ka<sup id="superinbody">1</sup>, are these Thai Cherries?” I shouted to my mother from the kitchen to the living room as I pitted and crushed the cherries and slowly drained them of their blood. The cherries I was referring to had been handpicked from our own garden just yesterday. Today, half were already spoilt—too black and blue; so bloated and fragile they could pop.</b></p>
+         <svg class=reportstarts height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        
+        <div class=report>
+
+        
+        <p class=stories> <b>“Mae ka<sup id="superinbody">1</sup>, are these Thai Cherries?” I shouted to my mother from the kitchen to the living room as I pitted and crushed the cherries and slowly drained them of their blood. The cherries I was referring to had been handpicked from our own garden just yesterday. Today, half were already spoilt—too black and blue; so bloated and fragile they could pop.</b></p>
         
         <img src="SourCherry_01.jpg" alt="SourCherry_01" style="display: block; width:100%;">
         
-        <p>“Huh? They’re not.” My mother absentmindedly answered. She was busy packing and did not have time to entertain my sudden obsession with cherries. Our cherry tree had been in our garden forever. I'd played tag under it. I’d climbed it. I’d cried after getting bitten by its black garden ants. But, I hadn’t really paid any mind to it.</p>
+        <p class=stories>“Huh? They’re not.” My mother absentmindedly answered. She was busy packing and did not have time to entertain my sudden obsession with cherries. Our cherry tree had been in our garden forever. I'd played tag under it. I’d climbed it. I’d cried after getting bitten by its black garden ants. But, I hadn’t really paid any mind to it.</p>
         
-        <p>“Then what are they?” I probed, all the while still pitting, crushing and juicing.</p>
+        <p class=stories>“Then what are they?” I probed, all the while still pitting, crushing and juicing.</p>
         
-        <p>Last year, after noticing again and again the accumulation of bruised, stomped, fallen cherries under the tree, I suddenly felt guilty. <a href="https://www.youtube.com/watch?v=ywjMtZH5Cls">The Kills’ “Am I the only sour cherry on your food stand?”</a> rang in my head. While I had been enjoying the imported sweet Bing cherries, I had been neglecting my own cherries and taking them for granted. To redeem myself, I promised to save the cherries.</p>
+        <p class=stories>Last year, after noticing again and again the accumulation of bruised, stomped, fallen cherries under the tree, I suddenly felt guilty. <a href="https://www.youtube.com/watch?v=ywjMtZH5Cls">The Kills’ “Am I the only sour cherry on your food stand?”</a> rang in my head. While I had been enjoying the imported sweet Bing cherries, I had been neglecting my own cherries and taking them for granted. To redeem myself, I promised to save the cherries.</p>
         
         <img src="SourCherry_04.jpg" alt="SourCherry_04" style="display: block; width:100%;margin-bottom: 20px;">
         <img src="SourCherry_02.jpg" alt="SourCherry_02" style="display: block; width:100%;">
         
-        <p>“It’s not Thai cherry. Thai cherries mun lek gwa.” Thai cherries are smaller, my mother elaborated.</p>
+        <p class=stories>“It’s not Thai cherry. Thai cherries mun lek gwa.” Thai cherries are smaller, my mother elaborated.</p>
         
-        <p>What are Thai cherries? A google search for Thai cherries in English will lead you nowhere. Only a search in Thai will turn out results. Thai cherries are scientifically known as Malpighia glare, and are commonly known as Barbados Cherries, Wild Crapemyrtle or Acerola. They are tropical ornamental shrubs native to the West Indies. Only in Thai, they are known as Thai cherries.</p>
+        <p class=stories>What are Thai cherries? A google search for Thai cherries in English will lead you nowhere. Only a search in Thai will turn out results. Thai cherries are scientifically known as Malpighia glare, and are commonly known as Barbados Cherries, Wild Crapemyrtle or Acerola. They are tropical ornamental shrubs native to the West Indies. Only in Thai, they are known as Thai cherries.</p>
         
-        <p>“Then who planted it? Did we plant it?” I was not going to let the matter drop.</p>
+        <p class=stories>“Then who planted it? Did we plant it?” I was not going to let the matter drop.</p>
         
-        <p>“Of course, we did. Who else could it be? People called them Spanish cherries, but they are not Spanish cherries.” My mother said, irritated.</p>
+        <p class=stories>“Of course, we did. Who else could it be? People called them Spanish cherries, but they are not Spanish cherries.” My mother said, irritated.</p>
         
-        <p>A brief search for Spanish cherries in Thai will also lead you to Barbados Cherries, <i>Malpighia</i> glare. Thai cherries are puzzlingly also known as Spanish cherries, but only in Thailand. </p>
+        <p class=stories>A brief search for Spanish cherries in Thai will also lead you to Barbados Cherries, <i>Malpighia</i> glare. Thai cherries are puzzlingly also known as Spanish cherries, but only in Thailand. </p>
         
-        <p>I finished the initial juicing, gathered the deflated remnants of my cherries into a cheesecloth and gave them one last squeezing before dumping them. Today’s batch of cherries—around 5 cups in total, yielded one and a quarter cups of juice. Typically, this same amount of cherries had been giving me less than half a cup. Monsoon cherries retain more liquid than cherries from other seasons do. I slowly stirred in some sugar, sprinkled a pinch of salt and added a squeeze of lime into the cherry juice. Too much lime would over power the cherry scent. Cherry juice by itself has a nice scent, but tastes quite bland. I prefer turning cherry juice into Loy-Gaew<sup id="superinbody">2</sup> concentrate. Cherry concentrate can later be mixed with soda, resulting in a bubbly, rose-coloured drink.</p>
+        <p class=stories>I finished the initial juicing, gathered the deflated remnants of my cherries into a cheesecloth and gave them one last squeezing before dumping them. Today’s batch of cherries—around 5 cups in total, yielded one and a quarter cups of juice. Typically, this same amount of cherries had been giving me less than half a cup. Monsoon cherries retain more liquid than cherries from other seasons do. I slowly stirred in some sugar, sprinkled a pinch of salt and added a squeeze of lime into the cherry juice. Too much lime would over power the cherry scent. Cherry juice by itself has a nice scent, but tastes quite bland. I prefer turning cherry juice into Loy-Gaew<sup id="superinbody">2</sup> concentrate. Cherry concentrate can later be mixed with soda, resulting in a bubbly, rose-coloured drink.</p>
         
-        <p>The identity of my cherry tree remains a mystery to everyone in our family, even to my mother who planted it. My cherries are not completely round. They have ridges. They are not sweet, but tart. They are not dark red, but actually cherry red. They are not Bing, Rainier, Queen Anne, Montmorency or Morello. They are definitely not Marasca. Although I do not know what my cherries are, I know they should not be wasted, for they make one hell of a drink.</p>
+        <p class=stories>The identity of my cherry tree remains a mystery to everyone in our family, even to my mother who planted it. My cherries are not completely round. They have ridges. They are not sweet, but tart. They are not dark red, but actually cherry red. They are not Bing, Rainier, Queen Anne, Montmorency or Morello. They are definitely not Marasca. Although I do not know what my cherries are, I know they should not be wasted, for they make one hell of a drink.</p>
         
         <img src="SourCherry_05.jpg" alt="SourCherry_05" style="display: block; width:100%;">
         
-        <ol type="1" class=footnotes>
+               <ol type="1" class=footnotes>
         <li>
             "Mae" แม่ means mother while "Ka" คะ is an ending word used by women to suggest politeness. If you dragged the word just a bit with high tonation, "Kaa" ขา, it will increases the chances of you getting things your way by 40%. If you dragged it too much and too low, "Kaaaaaa" คา, then you're just being rude.
         </li>
             <li>"Loy Gaew" ลอยแก้ว refers to the Thai desserts for which sour fruits are soaked over night in syrups (with a tad bit of salt). Typically served chilled. You never, I repeat never, cook a "Loy Gaew" over heat. The moment you put it over heat, it becomes "Chuem" เชื่อม.</li>
-        </ol>
+        </ol>   
+            
+        </div>
+    </div>  
+    
+</div>
         
-        
-        <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+<div class=row>
+<div class=header>
+    <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
         </svg>
-        <div class=navbar class=full>
-         <div class=credit>
-            <a href="index.html">Read More Stories</a>
-          </div>
-        <div class=scrollup onclick="scrollToTop()">
-        Back to the Top
-        </div>
-        <div class=date>
-           The Deli Club © 2020
-        </div>
+        
+        
+        <div class=full>
+                       
         </div>   
-        <svg height="2" width="100%">
-            <line x1="0" y1="0" x2="600" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
-        </svg>
-    </div>
-    
-    <img class=thumbnail src="SourCherry_Thumbnail.jpg style="width:100%;display:none;">
-    
-    <div class=logobig>
-        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
-    </div>
         
-     
+    </div>
+        </div>
+<div class=row>
+    <div class=header><h2>more stories</h2></div>
+        
+        </div>
+        
+
+<div class=row>
+    <div class=column><a href="DreamyNoBakeCreamCheesePie.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="PeachCreamCheesePie_Thumbnail.jpg">
+        <h1>Dreamy No-Bake Cream Cheese Pie</h1>
+        <p>Whether you're Alice, or Haruhi, this easy recipe got your tea party covered.</p>    
+        <h2>+recipe</h2>
+    </a></div>       
+        <div class=column><a href="ThingsThatBurn.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="Thingsthatburn_Thumbnail.jpg">
+        <h1>Things That Burn</h1>
+        <p>Discover the stages of boiled water mentioned in ancient Chinese poems</p>
+    </a></div>
+    <div class=column><a href="CalamansiMetrics.html">
+        <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+         <img class=menu src="CalamansiMetrics_Thumbnail.jpg">
+        <h1>Calamansi Metrics</h1>
+        <p>How the Philippine lime captures the heart of everyone it meets, but yet remains incognito internationally.</p>
+        <h2>+recipe</h2>
+    </a></div>   
+</div>
+        
+        
+<div class=row>
+<div class=header>
+    <svg height="2" width="100%">
+            <line x1="0" y1="0" x2="1920" y2="0" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+        </svg>
+        
+        
+        <div class=full>
+             <h2 class=scroll onclick="scrollToTop()">
+            Back to the Top
+            </h2>
+            <h2>
+           The Deli Club © 2020
+            </h2>
+        </div>   
+    </div>
+        </div>
+        
+    <img .thumbnail scr="DeliClubThumbnail.jpg">
+        
+
+    <div class=logobig id=logobig>
+        <a href="http://thedeli.club/"><img src="DeliClub.svg" alt="Deli Club Logo"></a>
+    </div>   
+        
+    </div>
+   
+        
     
     <script> 
         function scrollToTop() { 
             window.scrollTo(0, 0); 
         } 
         
-     </script> 
+     </script>   
+    
+
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logobig").style.width = "110px";
+  } else {
+    document.getElementById("logobig").style.width = "200px";
+  }
+}
+</script>
+    
+    
     
     
 </body>
-    
