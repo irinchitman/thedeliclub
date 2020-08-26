@@ -77,8 +77,15 @@
            padding: 15px 0px 15px 0px;
            font-style: italic;
        }
+
+        .faq {
+           color: #7A3B27;
+           padding: 15px 0px 15px 0px;
+           font-style: italic;
+            font-size: 21px;
+       }
       
-      h4 {
+        h4 {
             font-family: 'Libre Baskerville', serif;
             font-weight: 400;
             font-size: 39px;
@@ -89,11 +96,39 @@
             margin: 0px;
             padding: 15px 0px 15px 0px;
       }
+
+        h5 {
+            font-family: 'Libre Baskerville','Bai Jamjuree', serif;
+            font-weight: 400;
+            font-size: 21px;
+            color: #F7714D;
+            letter-spacing: 0.01em;
+            line-height: 1.2em;
+            margin: 0px;
+            padding: 15px 0px 0px;
+        }
+
+         h6 {
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 400;
+            font-size: 21px;
+            color: #598e80;
+            letter-spacing: 0.01em;
+            line-height: 1.2em;
+            margin: 0 auto;
+            padding: 0px 0px 15px 0px;
+            z-index: 4;
+        }
+
+        .textproduct {
+            text-align: center;
+            z-index: 5;
+        }
         
         
         
         p {
-            font-family: 'Libre Baskerville', serif;
+            font-family: 'Libre Baskerville', 'Bai Jamjuree', serif;
             font-weight: 400;
             font-size: 16px;
             color: #3D1E14;
@@ -145,6 +180,21 @@
        ol.ingredeints:first-child  {
            background-color: aqua;
        }
+
+        ol.productdetail {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            color: #F7714D;
+            letter-spacing: .02em;
+            line-height: 18px;
+            list-style-type:;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 8px;
+            margin: 18px 0px;
+        }
         
          ol.caption {
             padding-top: 0px;
@@ -254,10 +304,15 @@
         div.column {
             float: left;
             display: block;
-            position: relative;
-            
+            position: relative; 
         }
         
+        div.product {
+            float: left;
+            display: block;
+            position: relative;}
+           
+
         div.hero {
             float: left;
             display: block;
@@ -277,6 +332,11 @@
             .column, .hero, .header, .report {
                 width: 100%;
                     }
+            .product {
+                width:48%;
+                padding: 0% 1% 0;
+                display: inline-block;
+            }
             
             .reportstarts {
                 display: none;
@@ -291,6 +351,12 @@
                 padding: 0% 1% 0;
                 display: inline-block;
                     }
+            .product {
+                width: 46%;
+                padding: 0% 1% 0;
+                display: inline-block;
+             }
+             
              .hero{
                  width:62%;
                  padding: 0% 1% 0;
@@ -313,6 +379,10 @@
             margin: auto;
             display: block;
             
+        }
+        
+        #calamansiicon {
+            z-index: -100;
         }
         
         .menu {
@@ -351,3 +421,210 @@
            padding-top: 1%;
            z-index: 1;
        }
+      button.checkout {
+            background-color: #F7714D;
+            font-family: 'Noto Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: .15em;
+            border: none;
+            color: white;
+            padding: 12px 12px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color .6s ease-in-out;
+ }
+
+         button.info {
+            background-color: black;
+            font-family: 'Noto Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: .15em;
+            border: none;
+            color: white;
+            padding: 12px 12px;
+            margin-bottom: 8px;
+            margin-top: 4px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color .6s ease-in-out;
+            }
+
+        button:hover {
+            background-color: #598e80;
+    
+}
+    
+.landingpageshop {
+            background-color: #F7714D;
+            font-family: 'Noto Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: .15em;
+            border: none;
+            color: white;
+            padding: 12px 12px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            width: inherit;
+            transition: background-color .6s ease-in-out;
+}
+        
+
+/* Start Drop Down button*/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+       text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: .15em;
+            margin-bottom: 8px;
+            margin-top: 0px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #598e80;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #598e80;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* End drop down button */
+
+
+/* Start mailchimp css */
+
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    width: 65%;
+    margin: auto;
+}
+
+#mc-embedded-subscribe-form {
+    padding: 10px;
+}
+
+div.mc-field-group {
+    padding: 6px 0px;
+}
+
+div.mc-field-group label {
+    font:14px 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D1E14;
+}
+
+div.mc-field-group input {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #3D1E14;
+    letter-spacing: inherit;
+    line-height: 1.4em;
+    width: 98%;
+}
+
+input.button {
+            background-color: black;
+            font-family: 'Noto Sans', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: .15em;
+            border: none;
+            color: white;
+            padding: 12px 0px;
+            margin-bottom: 8px;
+            margin-top: 4px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color .6s ease-in-out;
+}
+
+.indicates-required {
+    text-align: right;
+        font:14px 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .15em;
+    color: #F7714D;
+}
+
+.mc-field-group .asterisk {
+    color: #F7714D;
+
+    
+}
+	/* End mailchimp css */
+
